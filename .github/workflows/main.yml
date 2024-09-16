@@ -3,7 +3,7 @@ name: Hello world template
 on:
   ...
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch
+  workflow_dispatch:
       run: echo "Hello World!"
   # List all files in the current directory for comparison before and after actions/checkout@v2.
   - run: ls -l

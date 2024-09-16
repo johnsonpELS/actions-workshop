@@ -3,6 +3,8 @@ name: Hello world template
 on:
   workflow_dispatch:
       run: echo "Hello World!"
+jobs:    
+  runs-on: ubuntu-latest
   run: ls -l
   uses: actions/checkout@v2
   run: ls -l

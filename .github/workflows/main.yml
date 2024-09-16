@@ -1,10 +1,9 @@
-name: Hello world template
-
 on:
   workflow_dispatch:
-      run: echo "Hello World!"
-jobs:    
-  runs-on: ubuntu-latest
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
     steps:
-      run:
-        echo "Hello"
+      - name: Greet the User
+        run: echo "Hello World!"

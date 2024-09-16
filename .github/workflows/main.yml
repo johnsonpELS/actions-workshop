@@ -5,6 +5,6 @@ on:
   workflow_dispatch:
       run: echo "Hello World!"
   # List all files in the current directory for comparison before and after actions/checkout@v2.
-  - run: ls -l
-  - uses: actions/checkout@v2
-  - run: ls -l
+  run: ls -l
+  uses: actions/checkout@v2
+  run: ls -l
